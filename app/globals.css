@@ -19,8 +19,36 @@
   }
 }
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Set default font size for the entire site */
+html {
+  font-size: 18px; /* default size, adjust as needed */
+  font-family: 'Inter', sans-serif; /* optional: set default font */
+  scroll-behavior: smooth;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px; /* smaller on tablets/mobiles */
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 20px; /* larger on big screens */
+  }
+}
+
+/* Optional: body styles for consistent typography */
+body {
+  margin: 0;
+  padding: 0;
+  color: #4c1d95; /* example text color matching pink theme */
+  line-height: 1.6;
 }
